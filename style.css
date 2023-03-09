@@ -1,0 +1,140 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: #fff;
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    grid-auto-rows: 200px;
+  
+}
+.container .wide{
+    grid-column: span 2;
+}
+.container .tall{
+    grid-row: span 2;
+}
+.container .big{
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+                                              /* 2nd */
+
+
+
+ /* *{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 5px;
+    max-width: 1100px;
+    margin-left: 35px;
+    background: #050505;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense ;
+}
+.v{
+    grid-row: span 2;
+}
+.h{
+    grid-column: span 2;
+    
+}
+.b{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+@media (max-width: 560px) {
+    .v{
+        grid-row: span 1;
+    }
+    .h{
+        grid-column: span 1;
+        
+    }
+    .b{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    
+}  */
+
+
+                                                          /* 3rd */
+    
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #3f4441;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 5px 8px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .column {
+    flex: 40%;
+    flex-wrap: wrap;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+} 
